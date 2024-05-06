@@ -1,14 +1,14 @@
 import { useCallback, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import FetchData from "../dbFunc/FetchData";
-import Container from "../components/Container";
-import FormInput from "../components/FormInput";
-import useThemeContext from "../hooks/use-theme-context";
-import Button from "../components/Button";
-import Error from "../components/Error";
-import Success from "../components/Success";
-import PutData from "../dbFunc/PutData";
-import useAuthContext from "../hooks/use-auth-context";
+import FetchData from "../../dbFunc/FetchData";
+import Container from "../../components/Container";
+import FormInput from "../../components/FormInput";
+import useThemeContext from "../../hooks/use-theme-context";
+import Button from "../../components/Button";
+import Error from "../../components/Error";
+import Success from "../../components/Success";
+import PutData from "../../dbFunc/PutData";
+import useAuthContext from "../../hooks/use-auth-context";
 const ResetPassword = () => {
   const {
     setEmailResetDetails,

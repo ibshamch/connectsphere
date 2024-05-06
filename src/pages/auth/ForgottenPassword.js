@@ -1,8 +1,8 @@
-import Container from "../components/Container";
-import FormInput from "../components/FormInput";
-import Button from "../components/Button";
-import Error from "../components/Error";
-import useAuthContext from "../hooks/use-auth-context";
+import Container from "../../components/Container";
+import FormInput from "../../components/FormInput";
+import Button from "../../components/Button";
+import Error from "../../components/Error";
+import useAuthContext from "../../hooks/use-auth-context";
 
 const ForgottenPassword = () => {
   const {

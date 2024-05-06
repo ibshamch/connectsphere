@@ -1,11 +1,11 @@
 import { useCallback, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import FetchData from "../dbFunc/FetchData";
-import Container from "../components/Container";
+import FetchData from "../../dbFunc/FetchData";
+import Container from "../../components/Container";
 import { CgProfile } from "react-icons/cg";
-import Button from "../components/Button";
-import useThemeContext from "../hooks/use-theme-context";
-import useAuthContext from "../hooks/use-auth-context";
+import Button from "../../components/Button";
+import useThemeContext from "../../hooks/use-theme-context";
+import useAuthContext from "../../hooks/use-auth-context";
 
 const IdentifyAccount = () => {
   const { setEmailDetails, firstName, lastName, email, navigate } =

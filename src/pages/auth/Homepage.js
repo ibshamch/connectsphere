@@ -1,9 +1,9 @@
-import Container from "../components/Container";
-import Panel from "../components/Panel";
+import Container from "../../components/Container";
+import Panel from "../../components/Panel";
 import { FaEnvelope } from "react-icons/fa";
-import Button from "../components/Button";
-import useThemeContext from "../hooks/use-theme-context";
-import useAuthContext from "../hooks/use-auth-context";
+import Button from "../../components/Button";
+import useThemeContext from "../../hooks/use-theme-context";
+import useAuthContext from "../../hooks/use-auth-context";
 import { useEffect } from "react";
 const Homepage = () => {
   const { darkTheme } = useThemeContext();

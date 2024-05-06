@@ -1,10 +1,10 @@
-import Container from "../components/Container";
-import FormInput from "../components/FormInput";
-import Button from "../components/Button";
-import Error from "../components/Error";
+import Container from "../../components/Container";
+import FormInput from "../../components/FormInput";
+import Button from "../../components/Button";
+import Error from "../../components/Error";
 import { Link } from "react-router-dom";
-import useThemeContext from "../hooks/use-theme-context";
-import useAuthContext from "../hooks/use-auth-context";
+import useThemeContext from "../../hooks/use-theme-context";
+import useAuthContext from "../../hooks/use-auth-context";
 import { useEffect } from "react";
 const LoginPage = () => {
   const { darkTheme } = useThemeContext();

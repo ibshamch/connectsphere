@@ -1,12 +1,12 @@
-import Container from "../components/Container";
-import FormInput from "../components/FormInput";
-import Button from "../components/Button";
-import Remember from "../components/Remember";
-import DropDown from "../components/DropDown";
-import Error from "../components/Error";
-import Modal from "../components/Modal";
-import Policy from "../components/Policy";
-import useAuthContext from "../hooks/use-auth-context";
+import Container from "../../components/Container";
+import FormInput from "../../components/FormInput";
+import Button from "../../components/Button";
+import Remember from "../../components/Remember";
+import DropDown from "../../components/DropDown";
+import Error from "../../components/Error";
+import Modal from "../../components/Modal";
+import Policy from "../../components/Policy";
+import useAuthContext from "../../hooks/use-auth-context";
 const SignupPage = () => {
   const {
     recoveryCode,

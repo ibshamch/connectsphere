@@ -1,93 +1,13 @@
 {
   "accounts": [
     {
-      "id": "9ac5",
-      "firstName": "Atrooba",
-      "lastName": "Ch",
-      "email": "atrooba@gmail.com",
-      "password": "333",
-      "accountCreatedOn": "19/11/2005",
-      "recoveryCode": "222",
-      "loginState": false
-    },
-    {
-      "id": "365f",
-      "firstName": "Ibsham",
-      "lastName": "Chaudhary",
-      "email": "ibshamch@gmail.com",
-      "password": "999",
-      "accountCreatedOn": "19/11/2007",
-      "recoveryCode": "333",
-      "loginState": false
-    },
-    {
-      "id": "2078",
+      "id": "ad07",
       "firstName": "Mehboob",
       "lastName": "Ch",
-      "email": "bobby@gmail.com",
-      "password": "123",
-      "accountCreatedOn": "19/10/2009",
-      "recoveryCode": "444",
-      "loginState": false
-    },
-    {
-      "id": "1e61",
-      "firstName": "Zahra ",
-      "lastName": "T",
-      "email": "zahra@gmail.com",
-      "password": "123",
-      "accountCreatedOn": "19/10/2006",
-      "recoveryCode": "555",
-      "loginState": false
-    },
-    {
-      "id": "182b",
-      "firstName": "Ibsham",
-      "lastName": "Chaudhary",
-      "email": "progwithibi444@gmail.com",
-      "password": "123",
-      "accountCreatedOn": "19/11/2005",
-      "recoveryCode": "5555",
-      "loginState": false
-    },
-    {
-      "id": "40f7",
-      "firstName": "Ibsham",
-      "lastName": "Chaudhary",
-      "email": "ibsham222@gmail.com",
-      "password": "123",
-      "accountCreatedOn": "18/10/2013",
-      "recoveryCode": "222",
-      "loginState": false
-    },
-    {
-      "id": "5cd7",
-      "firstName": "Atrooba",
-      "lastName": "Ch",
-      "email": "ibshamch@gmail.com",
-      "password": "111",
-      "accountCreatedOn": "19/11/2007",
-      "recoveryCode": "222",
-      "loginState": false
-    },
-    {
-      "id": "96ed",
-      "firstName": "Mehboob",
-      "lastName": "Ch",
-      "email": "ibshammehb@gmail.com",
-      "password": "123",
+      "email": "mehboob@yahoo.com",
+      "password": "Mehboob123",
       "accountCreatedOn": "18/11/2006",
-      "recoveryCode": "333",
-      "loginState": false
-    },
-    {
-      "id": "2624",
-      "firstName": "Ibsham",
-      "lastName": "Ch",
-      "email": "ibshamchaudary@gmail.com",
-      "password": "123",
-      "accountCreatedOn": "19/12/2003",
-      "recoveryCode": "222",
+      "recoveryCode": "123",
       "loginState": false
     }
   ]

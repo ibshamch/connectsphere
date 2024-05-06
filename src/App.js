@@ -1,14 +1,16 @@
 import { Routes, Route } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import LoginPage from "./pages/LoginPage";
+import Homepage from "./pages/auth/Homepage";
+import LoginPage from "./pages/auth/LoginPage";
 import NavigationBar from "./components/NavigationBar";
 import useThemeContext from "./hooks/use-theme-context";
-import SignupPage from "./pages/SignupPage";
-import SignUpSuccessful from "./pages/SignUpSuccessful";
-import ForgottenPassword from "./pages/ForgottenPassword";
-import IdentifyAccount from "./pages/IdentifyAccount";
-import ResetPassword from "./pages/ResetPassword";
+import SignupPage from "./pages/auth/SignupPage";
+import SignUpSuccessful from "./pages/auth/SignUpSuccessful";
+import ForgottenPassword from "./pages/auth/ForgottenPassword";
+import IdentifyAccount from "./pages/auth/IdentifyAccount";
+import ResetPassword from "./pages/auth/ResetPassword";
 import useAuthContext from "./hooks/use-auth-context";
+import Feed from "./pages/feed/Feed";
+import FeedNavigation from "./components/FeedNavigation";
 export default function App() {
   const { darkTheme } = useThemeContext();
   const { handleAccount } = useAuthContext();
@@ -38,7 +40,9 @@ export default function App() {
           <Route path="/auth/resetpassword/:id" element={<ResetPassword />} />
         </Route>
 
-        <Route path="/feed/:id" element={<h1>Feed</h1>} />
+        <Route path="/feed" element={<FeedNavigation />}>
+          <Route path="/feed/:id" element={<Feed />} />
+        </Route>
       </Routes>
     </div>
   );
