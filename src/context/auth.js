@@ -63,7 +63,8 @@ function AuthProvider({ children }) {
       });
       setUserExists(true);
       setAccountDetails(data);
-      console.log("Account Found");
+      setEmailLogin("");
+      setPasswordLogin("");
       navigate(`/feed/${data.id}`);
     } else {
       setUserExists(false);

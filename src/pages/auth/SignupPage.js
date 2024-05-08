@@ -32,13 +32,13 @@ const SignupPage = () => {
             type="text"
             name="firstname"
             placeholder="First Name"
-            className="text-lg"
+            className="text-lg focus:pb-3"
             required
           />
           <FormInput
             type="text"
             name="lastname"
-            className="text-lg"
+            className="text-lg focus:pb-3"
             placeholder="Last Name"
             required
           />
@@ -48,7 +48,7 @@ const SignupPage = () => {
             type="email"
             name="email"
             placeholder="Email"
-            className="sm:w-full text-lg"
+            className="sm:w-full text-lg focus:pb-3"
             required
           />
         </Container>
@@ -58,13 +58,13 @@ const SignupPage = () => {
             name="password"
             placeholder="Create Password"
             required
-            className="text-lg"
+            className="text-lg focus:pb-3"
           />
           <FormInput
             type="password"
             placeholder="Confirm Password"
             required
-            className="text-lg"
+            className="text-lg focus:pb-3"
           />
         </Container>
 
@@ -93,7 +93,7 @@ const SignupPage = () => {
         </Container>
         <Container className="flex-col justify-center">
           <FormInput
-            className="text-sm "
+            className="text-sm focus:pb-3"
             name="recoverycode"
             value={recoveryCode}
             onChange={(e) => setRecoveryCode(e.target.value)}

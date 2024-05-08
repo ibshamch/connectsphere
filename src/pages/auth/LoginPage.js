@@ -33,14 +33,14 @@ const LoginPage = () => {
           onChange={(e) => setEmailLogin(e.target.value)}
           type="email"
           placeholder="Enter Email"
-          className="self-center"
+          className="self-center focus:pb-3"
         />
         <FormInput
           value={passwordLogin}
           onChange={(e) => setPasswordLogin(e.target.value)}
           type="password"
           placeholder="Enter Password"
-          className="self-center"
+          className="self-center focus:pb-3"
         />
         <Link
           to="/auth/forgottenpassword"

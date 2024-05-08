@@ -74,7 +74,7 @@ const ResetPassword = () => {
             type="password"
             placeholder="Enter Recovery Code"
             value={code}
-            className="mb-2"
+            className="mb-2 focus:pb-3"
             onChange={(e) => {
               setCode(e.target.value);
             }}

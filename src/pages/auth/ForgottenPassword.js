@@ -23,7 +23,7 @@ const ForgottenPassword = () => {
         <FormInput
           type="text"
           placeholder="Enter Your Email"
-          className="min-w-64"
+          className="min-w-64 focus:pb-3"
           value={emailForgotten}
           onChange={(e) => setEmailForgotten(e.target.value)}
         />

@@ -5,7 +5,7 @@ const FormInput = ({ value, name, className, placeholder, type, ...rest }) => {
     <input
       value={value}
       name={name}
-      className={`border-b focus:pb-3 pt-2 pb-2 pl-2 outline-none ${
+      className={`border-b pt-2 pb-2 pl-2 outline-none ${
         darkTheme
           ? "border-gray-300  bg-inputDark border-solid"
           : " border-black bg-inputLight border-solid"
