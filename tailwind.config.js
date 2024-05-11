@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
       },
+      height: {},
       screens: {
         sm: "576px",
 

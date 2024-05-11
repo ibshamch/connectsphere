@@ -9,6 +9,7 @@ const Button = ({
   primary,
   disable,
   welcome,
+  warning,
   ...rest
 }) => {
   const classes = classNames(
@@ -16,13 +17,14 @@ const Button = ({
     {
       "bg-primarybtn  hover:bg-blue-600": primary,
       "bg-welcomebtn hover:bg-green-600": welcome,
+      "bg-red-500 hover:bg-red-600": warning,
       "rounded-xl": rounded,
       "rounded-full": roundedFull,
     },
     className
   );
   return (
-    <button type={type} className={classes} {...rest}>
+    <button type={type} {...rest} className={classes}>
       {children}
     </button>
   );

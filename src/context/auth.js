@@ -42,9 +42,12 @@ function AuthProvider({ children }) {
       )}/${getFormData.get("year")}`,
       recoveryCode: getFormData.get("recoverycode"),
       loginState: false,
+      yourPosts: [],
+      SentFriendRequests: [],
     };
 
     checkIfUserAlreadyExists(obj);
+    setRecoveryCode("");
   }
   const [emailLogin, setEmailLogin] = useState("");
   const [passwordLogin, setPasswordLogin] = useState("");

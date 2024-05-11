@@ -13,6 +13,7 @@ const FeedNavigation = () => {
   const { darkTheme, handleTheme } = useThemeContext();
   const { accountDetails, handleAccount, navigate } = useAuthContext();
   const { firstName, lastName, id } = accountDetails;
+
   const handleLogout = async () => {
     await PutData("accounts", id, {
       ...accountDetails,
@@ -23,7 +24,7 @@ const FeedNavigation = () => {
   };
 
   return (
-    <div className="px-6 py-4">
+    <div className="px-6 py-4 fixed inset-x-0">
       <Container className="justify-between">
         <Container className="profile-details items-center gap-3">
           <CgProfile className="text-4xl" />
