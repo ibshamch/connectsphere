@@ -44,7 +44,7 @@
       "password": "Shafiq123",
       "accountCreatedOn": "17/3/2007",
       "recoveryCode": "123",
-      "loginState": false,
+      "loginState": true,
       "yourPosts": [],
       "SentFriendRequests": []
     }

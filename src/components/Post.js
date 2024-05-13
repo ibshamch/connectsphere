@@ -3,7 +3,6 @@ import { CgProfile } from "react-icons/cg";
 import { MdDelete } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
-import { FaHeart } from "react-icons/fa";
 import { FaCommentDots } from "react-icons/fa";
 import { FaShare } from "react-icons/fa";
 import { useState } from "react";
