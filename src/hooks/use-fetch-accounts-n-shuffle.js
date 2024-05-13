@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { useParams } from "react-router-dom";
 import FetchData from "../dbFunc/FetchData";
 function useFetchAndShuffleAccounts() {
@@ -17,7 +17,7 @@ function useFetchAndShuffleAccounts() {
     return shuffledArray;
   };
 
-  const fetchAllAccounts = async () => {
+  const fetchAllAccounts = useCallback(async () => {
     try {
       const accounts = await FetchData("accounts");
       const accountToNotAdd = accounts.filter((account) => {
@@ -30,7 +30,8 @@ function useFetchAndShuffleAccounts() {
     } catch (error) {
       console.error("Error fetching accounts:", error);
     }
-  };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return {
     allAccounts,
     fetchAllAccounts,

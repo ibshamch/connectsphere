@@ -12,8 +12,7 @@ const Homepage = () => {
 
   useEffect(() => {
     checkAuthentication();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [checkAuthentication]);
 
   const handleGoLoginPage = () => {
     navigate("/auth/login");

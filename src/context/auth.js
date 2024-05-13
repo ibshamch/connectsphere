@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PostData from "../dbFunc/PostData";
 import FetchData from "../dbFunc/FetchData";
@@ -89,7 +89,7 @@ function AuthProvider({ children }) {
       setUserExistsForgotten(false);
     }
   };
-  async function checkAuthentication() {
+  const checkAuthentication = useCallback(async () => {
     const data = await FetchData("accounts");
     const authenticatedAccount = data.find((account) => {
       return account.loginState === true;
@@ -100,7 +100,8 @@ function AuthProvider({ children }) {
     } else {
       return;
     }
-  }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const [emailDetails, setEmailDetails] = useState({});
   const { firstName, lastName, email } = emailDetails;

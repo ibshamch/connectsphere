@@ -21,8 +21,7 @@ const LoginPage = () => {
   } = useAuthContext();
   useEffect(() => {
     checkAuthentication();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [checkAuthentication]);
 
   return (
     <Container className="flex-col items-center mt-32">

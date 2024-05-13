@@ -45,7 +45,17 @@
       "accountCreatedOn": "17/3/2007",
       "recoveryCode": "123",
       "loginState": true,
-      "yourPosts": [],
+      "yourPosts": [
+        {
+          "firstName": "Shafiq ",
+          "lastName": "Sarwar",
+          "post": "I am Shafiq",
+          "postedBy": "shafiq@gmail.com",
+          "postedAt": "Mon May 13 2024",
+          "id": 4139,
+          "yourPosts": "I am Shafiq Sarwar"
+        }
+      ],
       "SentFriendRequests": []
     }
   ]

@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     checkAuthentication();
     fetchAllAccounts();
-  }, []);
+  }, [checkAuthentication, fetchAllAccounts]);
 
   return (
     <SidebarLayout>
